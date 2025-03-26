@@ -417,6 +417,36 @@ const SONEIUM_ADDRESSES: ChainAddresses = {
   v4QuoterAddress: '0x3972c00f7ed4885e145823eb7c655375d275a1c5',
 }
 
+const STORY_AENEID_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x57232fab5a3269d3d77457bce96aadd455f274cb',
+  multicallAddress: '0x980b8b588d94ab63a11a7bfb807a5586f051cabf',
+  quoterAddress: '0xafb761fa30845288bc7e7ee2b22b964020bbba0b',
+  v3MigratorAddress: '0x0000000000000000000000000000000000000000',
+  nonfungiblePositionManagerAddress: '0x8d5b4f1db0c023dd113ede4d0632d57d2212efa5',
+  tickLensAddress: '0xf19acfb5a9768c7f08972ef1838c1adb79092773',
+  swapRouter02Address: '0x848df3bfe2fb0dc2775b6bb053b3df0101f70f73',
+
+  v4PoolManagerAddress: '0x0000000000000000000000000000000000000000',
+  v4PositionManagerAddress: '0x0000000000000000000000000000000000000000',
+  v4StateView: '0x0000000000000000000000000000000000000000',
+  v4QuoterAddress: '0x0000000000000000000000000000000000000000',
+}
+
+const STORY_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xa111ddbe973094f949d78ad755cd560f8737b7e2',
+  multicallAddress: '0x06323fe9eee6b78d6bd1ddff51eef790aceec0bd',
+  quoterAddress: '0x865e2bff1d5f9a01b91196d31126c2e432bc0f6c',
+  v3MigratorAddress: '0x0000000000000000000000000000000000000000',
+  nonfungiblePositionManagerAddress: '0xb3823797b00ef062aaa1c4b3c60149afc6ccf7a3',
+  tickLensAddress: '0x50588cbe655c62a9f6584c59de026efdffa71130',
+  swapRouter02Address: '0x2f41259ceffa284db94a4b9a242b64eb6dd5167e',
+
+  v4PoolManagerAddress: '0x0000000000000000000000000000000000000000',
+  v4PositionManagerAddress: '0x0000000000000000000000000000000000000000',
+  v4StateView: '0x0000000000000000000000000000000000000000',
+  v4QuoterAddress: '0x0000000000000000000000000000000000000000',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -446,6 +476,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.UNICHAIN]: UNICHAIN_ADDRESSES,
   [ChainId.MONAD_TESTNET]: MONAD_TESTNET_ADDRESSES,
   [ChainId.SONEIUM]: SONEIUM_ADDRESSES,
+  [ChainId.STORY_AENEID]: STORY_AENEID_ADDRESSES,
+  [ChainId.STORY]: STORY_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

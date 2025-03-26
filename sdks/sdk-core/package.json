@@ -1,8 +1,12 @@
 {
-  "name": "@uniswap/sdk-core",
+  "name": "@tentou-tech/uniswap-sdk-core",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tentou-tech/sdks.git"
+  },
   "keywords": [
+    "tentou-tech",
     "uniswap",
     "ethereum"
   ],
@@ -52,7 +56,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "provenance": true
+    "registry": "https://registry.npmjs.org/"
   },
   "release": {
     "extends": "semantic-release-monorepo",
@@ -82,5 +86,6 @@
         }
       ]
     ]
-  }
+  },
+  "version": "0.0.4"
 }
