@@ -2130,8 +2130,8 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@tentou/uniswap-sdk-core@file:/Users/haduong/work/tentou/sdks/sdks/sdk-core":
-  version "0.0.5"
+"@tentou-tech/uniswap-sdk-core@file:/Users/haduong/work/tentou/sdks/sdks/sdk-core":
+  version "0.0.6"
   resolved "file:sdks/sdk-core"
   dependencies:
     "@ethersproject/address" "^5.0.2"
@@ -9910,7 +9910,7 @@ tsconfig-paths@^3.15.0:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tsdx@^0.14.1, tsdx@0.14.1:
+tsdx@^0.14.1:
   version "0.14.1"
   dependencies:
     "@babel/core" "^7.4.4"
