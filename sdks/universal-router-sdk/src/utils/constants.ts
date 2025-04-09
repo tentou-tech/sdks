@@ -350,6 +350,34 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
+  // Story Aeneid testnet
+  [1315]: {
+    weth: '0x1514000000000000000000000000000000000000',
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0x0e2850543f69f678257266e0907ff9a58b3f13de',
+        creationBlock: 3254782,
+      },
+      [UniversalRouterVersion.V2_0]: {
+        address: '0x0e2850543f69f678257266e0907ff9a58b3f13de',
+        creationBlock: 3254782,
+      },
+    },
+  },
+  // Story mainnet
+  [1514]: {
+    weth: '0x1514000000000000000000000000000000000000',
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0x0e2850543f69f678257266e0907ff9a58b3f13de',
+        creationBlock: 3254782,
+      },
+      [UniversalRouterVersion.V2_0]: {
+        address: '0x0e2850543f69f678257266e0907ff9a58b3f13de',
+        creationBlock: 3254782,
+      },
+    },
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (version: UniversalRouterVersion, chainId: number): string => {

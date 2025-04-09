@@ -1,7 +1,7 @@
 {
-  "name": "@uniswap/v3-sdk",
+  "name": "@tentou-tech/uniswap-v3-sdk",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "repository": "https://github.com/tentou-tech/sdks.git",
   "keywords": [
     "uniswap",
     "ethereum"
@@ -27,6 +27,7 @@
   "dependencies": {
     "@ethersproject/abi": "^5.5.0",
     "@ethersproject/solidity": "^5.0.9",
+    "@tentou-tech/uniswap-sdk-core": "^0.0.11",
     "@uniswap/sdk-core": "^7.7.1",
     "@uniswap/swap-router-contracts": "^1.3.0",
     "@uniswap/v3-periphery": "^1.1.1",
@@ -54,8 +55,7 @@
     "singleQuote": true
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "release": {
     "extends": "semantic-release-monorepo",
@@ -85,5 +85,6 @@
         }
       ]
     ]
-  }
+  },
+  "version": "0.0.4"
 }

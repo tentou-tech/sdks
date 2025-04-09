@@ -418,13 +418,13 @@ const SONEIUM_ADDRESSES: ChainAddresses = {
 }
 
 const STORY_AENEID_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x57232fab5a3269d3d77457bce96aadd455f274cb',
-  multicallAddress: '0x980b8b588d94ab63a11a7bfb807a5586f051cabf',
-  quoterAddress: '0xafb761fa30845288bc7e7ee2b22b964020bbba0b',
+  v3CoreFactoryAddress: '0x3D9300D311BA04EB3351663676cEE0748473d9A0',
+  multicallAddress: '0x546f0F82eEF5c20844362aA8BeF66F0a9BAba3C5',
+  quoterAddress: '0xf02b1a3386D1495BC6BDB3f98a48ad9dAa5ba232',
   v3MigratorAddress: '0x0000000000000000000000000000000000000000',
-  nonfungiblePositionManagerAddress: '0x8d5b4f1db0c023dd113ede4d0632d57d2212efa5',
-  tickLensAddress: '0xf19acfb5a9768c7f08972ef1838c1adb79092773',
-  swapRouter02Address: '0x848df3bfe2fb0dc2775b6bb053b3df0101f70f73',
+  nonfungiblePositionManagerAddress: '0xeE96404216dd0D6dbbe197ED1066B5CD414ef3b9',
+  tickLensAddress: '0xb18bCBd8b83fc1Bc31E370481bD554456FC371B4',
+  swapRouter02Address: '0x21bc5d68F6DA0E43A90f078bcCb04feddEdcC93b',
 
   v4PoolManagerAddress: '0x0000000000000000000000000000000000000000',
   v4PositionManagerAddress: '0x0000000000000000000000000000000000000000',

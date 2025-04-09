@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@tentou-tech/uniswap-sdk-core'
 
 export const FACTORY_ADDRESS = '0x1F98431c8aD98523631AE4a59f267346ea31F984'
 
@@ -11,6 +11,10 @@ export function poolInitCodeHash(chainId?: ChainId): string {
   switch (chainId) {
     case ChainId.ZKSYNC:
       return '0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed'
+    case ChainId.STORY_AENEID:
+      return '0xd5178f9f07b08d01d075cc5b7e1a1ae23a37b3811522cb2fed1367201d51d4e5'
+    case ChainId.STORY:
+      return '0xd5178f9f07b08d01d075cc5b7e1a1ae23a37b3811522cb2fed1367201d51d4e5'
     default:
       return POOL_INIT_CODE_HASH
   }
