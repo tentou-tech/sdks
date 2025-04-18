@@ -1,5 +1,5 @@
 {
-  "name": "@tentou-tech/uniswap-v3-sdk",
+  "name": "@tentou-tech/uniswap-v3s1-sdk",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
   "repository": "https://github.com/tentou-tech/sdks.git",
   "keywords": [
