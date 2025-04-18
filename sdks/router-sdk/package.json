@@ -38,8 +38,7 @@
     "singleQuote": true
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "release": {
     "extends": "semantic-release-monorepo",
@@ -70,5 +69,5 @@
       ]
     ]
   },
-  "version": "0.0.2"
+  "version": "0.0.3"
 }

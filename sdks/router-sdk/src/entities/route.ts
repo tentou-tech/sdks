@@ -1,7 +1,7 @@
 // entities/route.ts
 
 import { Route as V2RouteSDK, Pair } from '@uniswap/v2-sdk'
-import { Route as V3RouteSDK, Pool as V3Pool } from '@uniswap/v3-sdk'
+import { Route as V3RouteSDK, Pool as V3Pool } from '@tentou-tech/uniswap-v3-sdk'
 import { Route as V4RouteSDK, Pool as V4Pool } from '@uniswap/v4-sdk'
 import { Protocol } from './protocol'
 import { Currency, Price, Token } from '@uniswap/sdk-core'
