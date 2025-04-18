@@ -26,6 +26,10 @@ export class Pool {
   public readonly liquidity: JSBI
   public readonly tickCurrent: number
   public readonly tickDataProvider: TickDataProvider
+  public poolAddress?: string
+  public initCodeHash?: string
+  public factoryAddress?: string
+  public routerAddress?: string
 
   private _token0Price?: Price<Token, Token>
   private _token1Price?: Price<Token, Token>

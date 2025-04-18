@@ -1,6 +1,6 @@
 import { RoutePlanner, CommandType } from '../../utils/routerCommands'
 import { Trade as V2Trade, Pair } from '@uniswap/v2-sdk'
-import { Trade as V3Trade, Pool as V3Pool, encodeRouteToPath } from '@uniswap/v3-sdk'
+import { Trade as V3Trade, Pool as V3Pool, encodeRouteToPath } from '@tentou-tech/uniswap-v3-sdk'
 import {
   Route as V4Route,
   Trade as V4Trade,
@@ -22,16 +22,16 @@ import {
   getOutputOfPools,
   encodeMixedRouteToPath,
   partitionMixedRouteByProtocol,
-} from '@uniswap/router-sdk'
+} from '@tentou-tech/uniswap-router-sdk'
 import { Permit2Permit } from '../../utils/inputTokens'
 import { getPathCurrency } from '../../utils/pathCurrency'
-import { Currency, TradeType, Token, CurrencyAmount, Percent } from '@uniswap/sdk-core'
+import { Currency, TradeType, Token, CurrencyAmount, Percent } from '@tentou-tech/uniswap-sdk-core'
 import { Command, RouterActionType, TradeConfig } from '../Command'
 import { SENDER_AS_RECIPIENT, ROUTER_AS_RECIPIENT, CONTRACT_BALANCE, ETH_ADDRESS } from '../../utils/constants'
 import { getCurrencyAddress } from '../../utils/getCurrencyAddress'
 import { encodeFeeBips } from '../../utils/numbers'
 import { BigNumber, BigNumberish } from 'ethers'
-import { TPool } from '@uniswap/router-sdk'
+import { TPool } from '@tentou-tech/uniswap-router-sdk'
 
 export type FlatFeeOptions = {
   amount: BigNumberish

@@ -1,5 +1,5 @@
 {
-  "name": "@uniswap/universal-router-sdk",
+  "name": "@tentou-tech/uniswap-universal-router-sdk",
   "description": "sdk for integrating with the Universal Router contracts",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
@@ -30,14 +30,15 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "4.7.0",
+    "@tentou-tech/uniswap-router-sdk": "0.0.3",
+    "@tentou-tech/uniswap-sdk-core": "0.0.15",
+    "@tentou-tech/uniswap-v3-sdk": "0.0.9",
+    "@types/bignumber.js": "^4.0.3",
     "@uniswap/permit2-sdk": "^1.3.0",
-    "@uniswap/router-sdk": "^2.0.2",
-    "@uniswap/sdk-core": "^7.7.1",
     "@uniswap/universal-router": "2.0.0-beta.2",
     "@uniswap/v2-core": "^1.0.1",
     "@uniswap/v2-sdk": "^4.15.2",
     "@uniswap/v3-core": "1.0.0",
-    "@uniswap/v3-sdk": "^3.25.2",
     "@uniswap/v4-sdk": "^1.21.2",
     "bignumber.js": "^9.0.2",
     "ethers": "^5.7.0"
@@ -65,8 +66,7 @@
     "trailingComma": "es5"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "release": {
     "extends": "semantic-release-monorepo",
@@ -100,5 +100,6 @@
   "installConfig": {
     "hoistingLimits": "workspaces"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "version": "0.0.1"
 }
