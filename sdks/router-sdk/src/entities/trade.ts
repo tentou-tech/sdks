@@ -1,27 +1,27 @@
 import { Currency, CurrencyAmount, Fraction, Percent, Price, TradeType, Ether } from '@uniswap/sdk-core'
 import { Pair, Route as V2RouteSDK, Trade as V2TradeSDK } from '@uniswap/v2-sdk'
-import { Pool as V3Pool, Route as V3RouteSDK, Trade as V3TradeSDK } from '@uniswap/v3-sdk'
+import { Pool as V3Pool, Route as V3RouteSDK, Trade as V3TradeSDK } from '@tentou-tech/uniswap-v3-sdk'
 import { Pool as V4Pool, Route as V4RouteSDK, Trade as V4TradeSDK } from '@uniswap/v4-sdk'
 import invariant from 'tiny-invariant'
 import { ONE, ONE_HUNDRED_PERCENT, ZERO, ZERO_PERCENT } from '../constants'
 import { MixedRouteSDK } from './mixedRoute/route'
 import { MixedRouteTrade as MixedRouteTradeSDK } from './mixedRoute/trade'
 import { IRoute, MixedRoute, RouteV2, RouteV3, RouteV4 } from './route'
-
+import { Pool as V3S1Pool } from '@tentou-tech/uniswap-v3s1-sdk'
 export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType extends TradeType> {
-  public readonly routes: IRoute<TInput, TOutput, Pair | V3Pool | V4Pool>[]
+  public readonly routes: IRoute<TInput, TOutput, Pair | V3Pool | V3S1Pool | V4Pool>[]
   public readonly tradeType: TTradeType
   private _outputAmount: CurrencyAmount<TOutput> | undefined
   private _inputAmount: CurrencyAmount<TInput> | undefined
-  private _nativeInputRoutes: IRoute<TInput, TOutput, Pair | V3Pool | V4Pool>[] | undefined
-  private _wethInputRoutes: IRoute<TInput, TOutput, Pair | V3Pool | V4Pool>[] | undefined
+  private _nativeInputRoutes: IRoute<TInput, TOutput, Pair | V3Pool | V3S1Pool | V4Pool>[] | undefined
+  private _wethInputRoutes: IRoute<TInput, TOutput, Pair | V3Pool | V3S1Pool | V4Pool>[] | undefined
 
   /**
    * The swaps of the trade, i.e. which routes and how much is swapped in each that
    * make up the trade. May consist of swaps in v2 or v3.
    */
   public readonly swaps: {
-    route: IRoute<TInput, TOutput, Pair | V3Pool | V4Pool>
+    route: IRoute<TInput, TOutput, Pair | V3Pool | V3S1Pool | V4Pool>
     inputAmount: CurrencyAmount<TInput>
     outputAmount: CurrencyAmount<TOutput>
   }[]
@@ -218,7 +218,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
     } else return 0
   }
 
-  public get nativeInputRoutes(): IRoute<TInput, TOutput, Pair | V3Pool | V4Pool>[] {
+  public get nativeInputRoutes(): IRoute<TInput, TOutput, Pair | V3Pool | V3S1Pool | V4Pool>[] {
     if (this._nativeInputRoutes) {
       return this._nativeInputRoutes
     }
@@ -227,7 +227,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
     return this._nativeInputRoutes
   }
 
-  public get wethInputRoutes(): IRoute<TInput, TOutput, Pair | V3Pool | V4Pool>[] {
+  public get wethInputRoutes(): IRoute<TInput, TOutput, Pair | V3Pool | V3S1Pool | V4Pool>[] {
     if (this._wethInputRoutes) {
       return this._wethInputRoutes
     }

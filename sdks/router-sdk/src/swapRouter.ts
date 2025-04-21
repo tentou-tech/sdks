@@ -13,7 +13,7 @@ import {
   SelfPermit,
   toHex,
   Trade as V3Trade,
-} from '@uniswap/v3-sdk'
+} from '@tentou-tech/uniswap-v3-sdk'
 import { Pool as V4Pool } from '@uniswap/v4-sdk'
 import invariant from 'tiny-invariant'
 import JSBI from 'jsbi'
