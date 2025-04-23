@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "4.7.0",
-    "@tentou-tech/uniswap-router-sdk": "0.1.0",
+    "@tentou-tech/uniswap-router-sdk": "0.1.2",
     "@tentou-tech/uniswap-v3-sdk": "0.1.0",
     "@tentou-tech/uniswap-v3s1-sdk": "0.1.0",
     "@types/bignumber.js": "^5.0.4",
@@ -102,5 +102,5 @@
     "hoistingLimits": "workspaces"
   },
   "sideEffects": false,
-  "version": "0.1.0"
+  "version": "0.1.2"
 }

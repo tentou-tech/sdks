@@ -2270,8 +2270,8 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@tentou-tech/uniswap-router-sdk@0.1.0", "@tentou-tech/uniswap-router-sdk@file:/Users/haduong/work/tentou/sdks/sdks/router-sdk":
-  version "0.1.0"
+"@tentou-tech/uniswap-router-sdk@0.1.2", "@tentou-tech/uniswap-router-sdk@file:/Users/haduong/work/tentou/sdks/sdks/router-sdk":
+  version "0.1.2"
   resolved "file:sdks/router-sdk"
   dependencies:
     "@ethersproject/abi" "^5.5.0"
@@ -2296,6 +2296,25 @@
     jsbi "^3.1.4"
     tiny-invariant "^1.1.0"
     toformat "^2.0.0"
+
+"@tentou-tech/uniswap-universal-router-sdk@file:/Users/haduong/work/tentou/sdks/sdks/universal-router-sdk":
+  version "0.1.2"
+  resolved "file:sdks/universal-router-sdk"
+  dependencies:
+    "@openzeppelin/contracts" "4.7.0"
+    "@tentou-tech/uniswap-router-sdk" "0.1.2"
+    "@tentou-tech/uniswap-v3-sdk" "0.1.0"
+    "@tentou-tech/uniswap-v3s1-sdk" "0.1.0"
+    "@types/bignumber.js" "^5.0.4"
+    "@uniswap/permit2-sdk" "^1.3.0"
+    "@uniswap/sdk-core" "^7.7.1"
+    "@uniswap/universal-router" "2.0.0-beta.2"
+    "@uniswap/v2-core" "^1.0.1"
+    "@uniswap/v2-sdk" "^4.15.2"
+    "@uniswap/v3-core" "1.0.0"
+    "@uniswap/v4-sdk" "^1.21.2"
+    bignumber.js "^9.0.2"
+    ethers "^5.7.0"
 
 "@tentou-tech/uniswap-v3-sdk@0.1.0", "@tentou-tech/uniswap-v3-sdk@file:/Users/haduong/work/tentou/sdks/sdks/v3-sdk":
   version "0.1.0"
@@ -2746,23 +2765,6 @@
     "@ethersproject/providers" "^5.7.0"
     "@uniswap/permit2-sdk" "^1.2.1"
     "@uniswap/sdk-core" "^7.5.0"
-    ethers "^5.7.0"
-
-"@uniswap/universal-router-sdk@file:/Users/haduong/work/tentou/sdks/sdks/universal-router-sdk":
-  resolved "file:sdks/universal-router-sdk"
-  dependencies:
-    "@openzeppelin/contracts" "4.7.0"
-    "@tentou-tech/uniswap-router-sdk" "0.1.0"
-    "@tentou-tech/uniswap-v3-sdk" "0.1.0"
-    "@tentou-tech/uniswap-v3s1-sdk" "0.1.0"
-    "@uniswap/permit2-sdk" "^1.3.0"
-    "@uniswap/sdk-core" "^7.7.1"
-    "@uniswap/universal-router" "2.0.0-beta.2"
-    "@uniswap/v2-core" "^1.0.1"
-    "@uniswap/v2-sdk" "^4.15.2"
-    "@uniswap/v3-core" "1.0.0"
-    "@uniswap/v4-sdk" "^1.21.2"
-    bignumber.js "^9.0.2"
     ethers "^5.7.0"
 
 "@uniswap/universal-router@2.0.0-beta.2":
