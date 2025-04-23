@@ -8,7 +8,7 @@ import {
   Position as V3Position,
   NonfungiblePositionManager as V3PositionManager,
   RemoveLiquidityOptions as V3RemoveLiquidityOptions,
-} from '@uniswap/v3-sdk'
+} from '@tentou-tech/uniswap-v3-sdk'
 import {
   Position as V4Position,
   V4PositionManager,

@@ -2,6 +2,7 @@
 
 import { Route as V2RouteSDK, Pair } from '@uniswap/v2-sdk'
 import { Route as V3RouteSDK, Pool as V3Pool } from '@tentou-tech/uniswap-v3-sdk'
+import { Route as V3S1RouteSDK, Pool as V3S1Pool } from '@tentou-tech/uniswap-v3s1-sdk'
 import { Route as V4RouteSDK, Pool as V4Pool } from '@uniswap/v4-sdk'
 import { Protocol } from './protocol'
 import { Currency, Price, Token } from '@uniswap/sdk-core'
@@ -9,7 +10,7 @@ import { MixedRouteSDK } from './mixedRoute/route'
 
 // Helper function to get the pathInput and pathOutput for a V2 / V3 route
 // currency could be native so we check against the wrapped version as they don't support native ETH in path
-export function getPathToken(currency: Currency, pool: Pair | V3Pool): Token {
+export function getPathToken(currency: Currency, pool: Pair | V3Pool | V3S1Pool): Token {
   if (pool.token0.wrapped.equals(currency.wrapped)) {
     return pool.token0
   } else if (pool.token1.wrapped.equals(currency.wrapped)) {
@@ -19,7 +20,11 @@ export function getPathToken(currency: Currency, pool: Pair | V3Pool): Token {
   }
 }
 
-export interface IRoute<TInput extends Currency, TOutput extends Currency, TPool extends Pair | V3Pool | V4Pool> {
+export interface IRoute<
+  TInput extends Currency,
+  TOutput extends Currency,
+  TPool extends Pair | V3Pool | V3S1Pool | V4Pool
+> {
   protocol: Protocol
   // array of pools if v3 or pairs if v2
   pools: TPool[]
@@ -67,6 +72,24 @@ export class RouteV3<TInput extends Currency, TOutput extends Currency>
   }
 }
 
+// V3S1 route wrapper
+export class RouteV3S1<TInput extends Currency, TOutput extends Currency>
+  extends V3S1RouteSDK<TInput, TOutput>
+  implements IRoute<TInput, TOutput, V3S1Pool>
+{
+  public readonly protocol: Protocol = Protocol.V3S1
+  public readonly path: Token[]
+  public pathInput: Currency
+  public pathOutput: Currency
+
+  constructor(v3s1Route: V3S1RouteSDK<TInput, TOutput>) {
+    super(v3s1Route.pools, v3s1Route.input, v3s1Route.output)
+    this.path = v3s1Route.tokenPath
+    this.pathInput = getPathToken(v3s1Route.input, this.pools[0])
+    this.pathOutput = getPathToken(v3s1Route.output, this.pools[this.pools.length - 1])
+  }
+}
+
 // V4 route wrapper
 export class RouteV4<TInput extends Currency, TOutput extends Currency>
   extends V4RouteSDK<TInput, TOutput>
@@ -84,7 +107,7 @@ export class RouteV4<TInput extends Currency, TOutput extends Currency>
 // Mixed route wrapper
 export class MixedRoute<TInput extends Currency, TOutput extends Currency>
   extends MixedRouteSDK<TInput, TOutput>
-  implements IRoute<TInput, TOutput, Pair | V3Pool | V4Pool>
+  implements IRoute<TInput, TOutput, Pair | V3Pool | V3S1Pool | V4Pool>
 {
   public readonly protocol: Protocol = Protocol.MIXED
 
