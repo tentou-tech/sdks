@@ -61,6 +61,8 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.UNICHAIN]: '0x1f98400000000000000000000000000000000002',
   [ChainId.MONAD_TESTNET]: '0x733e88f248b742db6c14c0b1713af5ad7fdd59d0',
   [ChainId.SONEIUM]: '0x97febbc2adbd5644ba22736e962564b23f5828ce',
+  [ChainId.STORY_AENEID]: '0x6D3e2f58954bf4E1d0C4bA26a85a1b49b2e244C6',
+  [ChainId.STORY]: '0x6D3e2f58954bf4E1d0C4bA26a85a1b49b2e244C6',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -83,6 +85,8 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.UNICHAIN]: '0x284f11109359a7e1306c3e447ef14d38400063ff',
   [ChainId.MONAD_TESTNET]: '0xfb8e1c3b833f9e67a71c859a132cf783b645e436',
   [ChainId.SONEIUM]: '0x273f68c234fa55b550b40e563c4a488e0d334320',
+  [ChainId.STORY_AENEID]: '0x674eFAa8C50cBEF923ECe625d3c276B7Bb1c16fB',
+  [ChainId.STORY]: '0x674eFAa8C50cBEF923ECe625d3c276B7Bb1c16fB',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon

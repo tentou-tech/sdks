@@ -1,14 +1,14 @@
-import { Percent, V2_FACTORY_ADDRESSES } from '@uniswap/sdk-core'
+import { Percent, V2_FACTORY_ADDRESSES } from '@tentou-tech/uniswap-sdk-core'
 import JSBI from 'jsbi'
 
 /**
  * @deprecated use FACTORY_ADDRESS_MAP instead
  */
-export const FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
+export const FACTORY_ADDRESS = '0x6D3e2f58954bf4E1d0C4bA26a85a1b49b2e244C6'
 
 export const FACTORY_ADDRESS_MAP: { [chainId: number]: string } = V2_FACTORY_ADDRESSES
 
-export const INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f'
+export const INIT_CODE_HASH = '0x823e88fdeb5597aaf4f360932ab07eb2ec6bb4dd75d44afb6814de02dd6cff9c'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
