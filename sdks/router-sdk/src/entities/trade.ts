@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount, Fraction, Percent, Price, TradeType, Ether } from '@uniswap/sdk-core'
-import { Pair, Route as V2RouteSDK, Trade as V2TradeSDK } from '@uniswap/v2-sdk'
+import { Currency, CurrencyAmount, Fraction, Percent, Price, TradeType, Ether } from '@tentou-tech/uniswap-sdk-core'
+import { Pair, Route as V2RouteSDK, Trade as V2TradeSDK } from '@tentou-tech/uniswap-v2-sdk'
 import { Pool as V3Pool, Route as V3RouteSDK, Trade as V3TradeSDK } from '@tentou-tech/uniswap-v3-sdk'
 import { Pool as V3S1Pool, Route as V3S1RouteSDK, Trade as V3S1TradeSDK } from '@tentou-tech/uniswap-v3s1-sdk'
 import { Pool as V4Pool, Route as V4RouteSDK, Trade as V4TradeSDK } from '@uniswap/v4-sdk'

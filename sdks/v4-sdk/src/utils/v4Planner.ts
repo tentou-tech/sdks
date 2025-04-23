@@ -1,7 +1,7 @@
 import invariant from 'tiny-invariant'
 import { defaultAbiCoder } from 'ethers/lib/utils'
 import { BigNumber } from 'ethers'
-import { Currency, Percent, TradeType } from '@uniswap/sdk-core'
+import { Currency, Percent, TradeType } from '@tentou-tech/uniswap-sdk-core'
 import { Trade } from '../entities/trade'
 import { ADDRESS_ZERO, EMPTY_BYTES } from '../internalConstants'
 import { encodeRouteToPath } from './encodeRouteToPath'
