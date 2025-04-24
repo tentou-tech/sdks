@@ -1,5 +1,5 @@
 import { RoutePlanner, CommandType } from '../../utils/routerCommands'
-import { Trade as V2Trade, Pair } from '@uniswap/v2-sdk'
+import { Trade as V2Trade, Pair } from '@tentou-tech/uniswap-v2-sdk'
 import { Trade as V3Trade, Pool as V3Pool, encodeRouteToPath } from '@tentou-tech/uniswap-v3-sdk'
 import {
   Route as V4Route,
@@ -8,7 +8,7 @@ import {
   V4Planner,
   encodeRouteToPath as encodeV4RouteToPath,
   Actions,
-} from '@uniswap/v4-sdk'
+} from '@tentou-tech/uniswap-v4-sdk'
 import {
   Trade as RouterTrade,
   MixedRouteTrade,

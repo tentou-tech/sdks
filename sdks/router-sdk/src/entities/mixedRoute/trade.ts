@@ -10,7 +10,7 @@ import {
 } from '@tentou-tech/uniswap-sdk-core'
 import { Pair } from '@tentou-tech/uniswap-v2-sdk'
 import { BestTradeOptions, Pool as V3Pool } from '@tentou-tech/uniswap-v3-sdk'
-import { Pool as V4Pool } from '@uniswap/v4-sdk'
+import { Pool as V4Pool } from '@tentou-tech/uniswap-v4-sdk'
 import invariant from 'tiny-invariant'
 import { ONE, ZERO } from '../../constants'
 import { MixedRouteSDK } from './route'
