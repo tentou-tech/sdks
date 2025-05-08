@@ -426,7 +426,7 @@ const STORY_AENEID_ADDRESSES: ChainAddresses = {
   multicallAddress: '0x546f0F82eEF5c20844362aA8BeF66F0a9BAba3C5',
   quoterAddress: '0xf02b1a3386D1495BC6BDB3f98a48ad9dAa5ba232',
   v3MigratorAddress: '0x0000000000000000000000000000000000000000',
-  nonfungiblePositionManagerAddress: '0xeE96404216dd0D6dbbe197ED1066B5CD414ef3b9',
+  nonfungiblePositionManagerAddress: '0xa09B218862abfAFB67A5E356b6f507F0e0Ce061E',
   tickLensAddress: '0xb18bCBd8b83fc1Bc31E370481bD554456FC371B4',
   swapRouter02Address: '0x21bc5d68F6DA0E43A90f078bcCb04feddEdcC93b',
 
@@ -437,13 +437,13 @@ const STORY_AENEID_ADDRESSES: ChainAddresses = {
 }
 
 const STORY_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xa111ddbe973094f949d78ad755cd560f8737b7e2',
-  multicallAddress: '0x06323fe9eee6b78d6bd1ddff51eef790aceec0bd',
-  quoterAddress: '0x865e2bff1d5f9a01b91196d31126c2e432bc0f6c',
+  v3CoreFactoryAddress: '0x74014BbbE2702274c01acA0BD0c5389779f5A050',
+  multicallAddress: '0x06323fe9eEe6b78D6bD1DdFF51eEF790Aceec0bd',
+  quoterAddress: '0x1434Ae03CfA29d314da73fC18013CCd04f100af6',
   v3MigratorAddress: '0x0000000000000000000000000000000000000000',
-  nonfungiblePositionManagerAddress: '0xb3823797b00ef062aaa1c4b3c60149afc6ccf7a3',
-  tickLensAddress: '0x50588cbe655c62a9f6584c59de026efdffa71130',
-  swapRouter02Address: '0x2f41259ceffa284db94a4b9a242b64eb6dd5167e',
+  nonfungiblePositionManagerAddress: '0xb3823797B00ef062Aaa1c4B3c60149AFc6CCf7a3',
+  tickLensAddress: '0x50588Cbe655c62A9f6584c59de026EfDfFA71130',
+  swapRouter02Address: '0x1062916B1Be3c034C1dC6C26f682Daf1861A3909',
 
   v4PoolManagerAddress: '0x0000000000000000000000000000000000000000',
   v4PositionManagerAddress: '0x0000000000000000000000000000000000000000',
