@@ -27,7 +27,7 @@
   "dependencies": {
     "@ethersproject/address": "^5.0.2",
     "@ethersproject/solidity": "^5.0.9",
-    "@tentou-tech/uniswap-sdk-core": "^0.0.16",
+    "@tentou-tech/uniswap-sdk-core": "^0.0.17",
     "tiny-invariant": "^1.1.0",
     "tiny-warning": "^1.0.3"
   },
@@ -83,5 +83,5 @@
       ]
     ]
   },
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
