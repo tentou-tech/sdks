@@ -1,5 +1,5 @@
-import { Currency, Token } from '@uniswap/sdk-core'
-import { Pool as V4Pool } from '@uniswap/v4-sdk'
+import { Currency, Token } from '@tentou-tech/uniswap-sdk-core'
+import { Pool as V4Pool } from '@tentou-tech/uniswap-v4-sdk'
 import { TPool } from '@tentou-tech/uniswap-router-sdk'
 
 export function getPathCurrency(currency: Currency, pool: TPool): Currency {

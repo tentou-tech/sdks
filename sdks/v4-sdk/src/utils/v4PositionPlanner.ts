@@ -1,6 +1,6 @@
 import { Actions, V4Planner } from './v4Planner'
 import { Pool } from '../entities'
-import { BigintIsh, Currency } from '@uniswap/sdk-core'
+import { BigintIsh, Currency } from '@tentou-tech/uniswap-sdk-core'
 import { toAddress } from '../utils/currencyMap'
 import { EMPTY_BYTES } from '../internalConstants'
 

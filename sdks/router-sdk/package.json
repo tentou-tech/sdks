@@ -21,12 +21,12 @@
   },
   "dependencies": {
     "@ethersproject/abi": "^5.5.0",
-    "@tentou-tech/uniswap-v3-sdk": "0.1.0",
-    "@tentou-tech/uniswap-v3s1-sdk": "0.1.0",
-    "@uniswap/sdk-core": "^7.7.2",
+    "@tentou-tech/uniswap-sdk-core": "^0.0.16",
+    "@tentou-tech/uniswap-v2-sdk": "^0.1.1",
+    "@tentou-tech/uniswap-v3-sdk": "0.1.2",
+    "@tentou-tech/uniswap-v3s1-sdk": "0.1.2",
     "@uniswap/swap-router-contracts": "^1.3.0",
-    "@uniswap/v2-sdk": "^4.15.2",
-    "@uniswap/v4-sdk": "^1.21.2"
+    "@tentou-tech/uniswap-v4-sdk": "0.1.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
@@ -70,5 +70,5 @@
       ]
     ]
   },
-  "version": "0.1.2"
+  "version": "0.1.5"
 }

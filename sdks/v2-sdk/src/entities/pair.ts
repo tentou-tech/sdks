@@ -1,7 +1,7 @@
 import { getCreate2Address } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
 import { keccak256, pack } from '@ethersproject/solidity'
-import { BigintIsh, CurrencyAmount, Percent, Price, sqrt, Token } from '@uniswap/sdk-core'
+import { BigintIsh, CurrencyAmount, Percent, Price, sqrt, Token } from '@tentou-tech/uniswap-sdk-core'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 

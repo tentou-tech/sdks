@@ -11,9 +11,9 @@ Install latest version of universal-router-sdk. Then import the corresponding Tr
 warning: `swapERC20CallParameters()` to be deprecated in favor of `swapCallParameters()`
 
 ```typescript
-import { TradeType } from '@uniswap/sdk-core'
-import { Trade as V2TradeSDK } from '@uniswap/v2-sdk'
-import { Trade as V3TradeSDK } from '@uniswap/v3-sdk'
+import { TradeType } from '@tentou-tech/uniswap-sdk-core'
+import { Trade as V2TradeSDK } from '@tentou-tech/uniswap-v2-sdk'
+import { Trade as V3TradeSDK } from '@tentou-tech/uniswap-v3-sdk'
 import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from '@tentou-tech/uniswap-router-sdk'
 
 const options = { slippageTolerance, recipient }

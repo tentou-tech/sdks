@@ -1,7 +1,7 @@
 import JSBI from 'jsbi'
 import { ethers } from 'ethers'
 import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from '@tentou-tech/uniswap-router-sdk'
-import { Trade as V2Trade, Pair, Route as RouteV2, computePairAddress } from '@uniswap/v2-sdk'
+import { Trade as V2Trade, Pair, Route as RouteV2, computePairAddress } from '@tentou-tech/uniswap-v2-sdk'
 import {
   Trade as V3Trade,
   Pool,
@@ -11,14 +11,14 @@ import {
   TICK_SPACINGS,
   FeeAmount,
   Position,
-} from '@uniswap/v3-sdk'
-import { Pool as V4Pool, Route as RouteV4, Trade as V4Trade, Position as V4Position } from '@uniswap/v4-sdk'
+} from '@tentou-tech/uniswap-v3-sdk'
+import { Pool as V4Pool, Route as RouteV4, Trade as V4Trade, Position as V4Position } from '@tentou-tech/uniswap-v4-sdk'
 import { SwapOptions } from '../../src'
-import { CurrencyAmount, TradeType, Ether, Token, Percent, Currency } from '@uniswap/sdk-core'
+import { CurrencyAmount, TradeType, Ether, Token, Percent, Currency } from '@tentou-tech/uniswap-sdk-core'
 import IUniswapV3Pool from '@uniswap/v3-core/artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json'
 import { TEST_RECIPIENT_ADDRESS, ROUTER_ADDRESS } from './addresses'
 import { MigrateV3ToV4Options } from '../../src/swapRouter'
-import { encodeSqrtRatioX96 } from '@uniswap/v3-sdk'
+import { encodeSqrtRatioX96 } from '@tentou-tech/uniswap-v3-sdk'
 
 const V2_FACTORY = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
 const V2_ABI = [

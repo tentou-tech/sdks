@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@tentou-tech/uniswap-sdk-core'
 import { ETH_ADDRESS } from './constants'
 
 export function getCurrencyAddress(currency: Currency): string {

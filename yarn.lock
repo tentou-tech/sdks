@@ -2270,34 +2270,19 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@tentou-tech/uniswap-router-sdk@0.1.2", "@tentou-tech/uniswap-router-sdk@file:/Users/haduong/work/tentou/sdks/sdks/router-sdk":
-  version "0.1.2"
+"@tentou-tech/uniswap-router-sdk@0.1.5", "@tentou-tech/uniswap-router-sdk@file:/Users/haduong/work/tentou/sdks/sdks/router-sdk":
+  version "0.1.5"
   resolved "file:sdks/router-sdk"
   dependencies:
     "@ethersproject/abi" "^5.5.0"
-    "@tentou-tech/uniswap-v3-sdk" "0.1.0"
-    "@tentou-tech/uniswap-v3s1-sdk" "0.1.0"
-    "@uniswap/sdk-core" "^7.7.2"
+    "@tentou-tech/uniswap-sdk-core" "^0.0.16"
+    "@tentou-tech/uniswap-v2-sdk" "^0.1.1"
+    "@tentou-tech/uniswap-v3-sdk" "0.1.2"
+    "@tentou-tech/uniswap-v3s1-sdk" "0.1.2"
+    "@tentou-tech/uniswap-v4-sdk" "0.1.0"
     "@uniswap/swap-router-contracts" "^1.3.0"
-    "@uniswap/v2-sdk" "^4.15.2"
-    "@uniswap/v4-sdk" "^1.21.2"
 
-"@tentou-tech/uniswap-sdk-core@^0.0.15":
-  version "0.0.15"
-  resolved "https://registry.npmjs.org/@tentou-tech/uniswap-sdk-core/-/uniswap-sdk-core-0.0.15.tgz"
-  integrity sha512-GFUI3XDortQyvGWBv7qdEa5olBpwZ/ue3FhPdRixwV5Q0CSrDwGb5l/GhpX6K47lisWvyh6lf/PMg53bPc68pA==
-  dependencies:
-    "@ethersproject/address" "^5.0.2"
-    "@ethersproject/bytes" "^5.7.0"
-    "@ethersproject/keccak256" "5.7.0"
-    "@ethersproject/strings" "5.7.0"
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.4"
-    tiny-invariant "^1.1.0"
-    toformat "^2.0.0"
-
-"@tentou-tech/uniswap-sdk-core@^0.0.16", "@tentou-tech/uniswap-sdk-core@file:/Users/haduong/work/tentou/sdks/sdks/sdk-core":
+"@tentou-tech/uniswap-sdk-core@^0.0.16", "@tentou-tech/uniswap-sdk-core@0.0.16", "@tentou-tech/uniswap-sdk-core@file:/Users/haduong/work/tentou/sdks/sdks/sdk-core":
   version "0.0.16"
   resolved "file:sdks/sdk-core"
   dependencies:
@@ -2312,26 +2297,26 @@
     toformat "^2.0.0"
 
 "@tentou-tech/uniswap-universal-router-sdk@file:/Users/haduong/work/tentou/sdks/sdks/universal-router-sdk":
-  version "0.1.2"
+  version "0.1.6"
   resolved "file:sdks/universal-router-sdk"
   dependencies:
     "@openzeppelin/contracts" "4.7.0"
-    "@tentou-tech/uniswap-router-sdk" "0.1.2"
-    "@tentou-tech/uniswap-v3-sdk" "0.1.0"
-    "@tentou-tech/uniswap-v3s1-sdk" "0.1.0"
+    "@tentou-tech/uniswap-router-sdk" "0.1.5"
+    "@tentou-tech/uniswap-v2-sdk" "^0.1.1"
+    "@tentou-tech/uniswap-v3-sdk" "0.1.2"
+    "@tentou-tech/uniswap-v3s1-sdk" "0.1.2"
+    "@tentou-tech/uniswap-v4-sdk" "0.1.0"
     "@types/bignumber.js" "^5.0.4"
     "@uniswap/permit2-sdk" "^1.3.0"
     "@uniswap/sdk-core" "^7.7.1"
     "@uniswap/universal-router" "2.0.0-beta.2"
     "@uniswap/v2-core" "^1.0.1"
-    "@uniswap/v2-sdk" "^4.15.2"
     "@uniswap/v3-core" "1.0.0"
-    "@uniswap/v4-sdk" "^1.21.2"
     bignumber.js "^9.0.2"
     ethers "^5.7.0"
 
-"@tentou-tech/uniswap-v2-sdk@file:/Users/haduong/work/tentou/sdks/sdks/v2-sdk":
-  version "0.1.0"
+"@tentou-tech/uniswap-v2-sdk@^0.1.1", "@tentou-tech/uniswap-v2-sdk@file:/Users/haduong/work/tentou/sdks/sdks/v2-sdk":
+  version "0.1.1"
   resolved "file:sdks/v2-sdk"
   dependencies:
     "@ethersproject/address" "^5.0.2"
@@ -2340,46 +2325,39 @@
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
 
-"@tentou-tech/uniswap-v3-sdk@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/@tentou-tech/uniswap-v3-sdk/-/uniswap-v3-sdk-0.1.0.tgz"
-  integrity sha512-N82i+QbJ+fVpxBQwr/ZNrMu4aGx/ekAMWQwN3HoJXucc1rMQY/t6JFQh8fTERAJNpcDBLpavj74bNKi//6Y3qQ==
-  dependencies:
-    "@ethersproject/abi" "^5.5.0"
-    "@ethersproject/solidity" "^5.0.9"
-    "@tentou-tech/uniswap-sdk-core" "^0.0.15"
-    "@uniswap/sdk-core" "^7.7.1"
-    "@uniswap/swap-router-contracts" "^1.3.0"
-    "@uniswap/v3-periphery" "^1.1.1"
-    "@uniswap/v3-staker" "1.0.0"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-
-"@tentou-tech/uniswap-v3-sdk@file:/Users/haduong/work/tentou/sdks/sdks/v3-sdk":
-  version "0.1.1"
+"@tentou-tech/uniswap-v3-sdk@0.1.2", "@tentou-tech/uniswap-v3-sdk@file:/Users/haduong/work/tentou/sdks/sdks/v3-sdk":
+  version "0.1.2"
   resolved "file:sdks/v3-sdk"
   dependencies:
     "@ethersproject/abi" "^5.5.0"
     "@ethersproject/solidity" "^5.0.9"
     "@tentou-tech/uniswap-sdk-core" "^0.0.16"
-    "@uniswap/sdk-core" "^7.7.1"
     "@uniswap/swap-router-contracts" "^1.3.0"
     "@uniswap/v3-periphery" "^1.1.1"
     "@uniswap/v3-staker" "1.0.0"
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
 
-"@tentou-tech/uniswap-v3s1-sdk@0.1.0", "@tentou-tech/uniswap-v3s1-sdk@file:/Users/haduong/work/tentou/sdks/sdks/v3s1-sdk":
-  version "0.1.1"
+"@tentou-tech/uniswap-v3s1-sdk@0.1.2", "@tentou-tech/uniswap-v3s1-sdk@file:/Users/haduong/work/tentou/sdks/sdks/v3s1-sdk":
+  version "0.1.2"
   resolved "file:sdks/v3s1-sdk"
   dependencies:
     "@ethersproject/abi" "^5.5.0"
     "@ethersproject/solidity" "^5.0.9"
     "@tentou-tech/uniswap-sdk-core" "^0.0.16"
-    "@uniswap/sdk-core" "^7.7.1"
     "@uniswap/swap-router-contracts" "^1.3.0"
     "@uniswap/v3-periphery" "^1.1.1"
     "@uniswap/v3-staker" "1.0.0"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+
+"@tentou-tech/uniswap-v4-sdk@0.1.0", "@tentou-tech/uniswap-v4-sdk@file:/Users/haduong/work/tentou/sdks/sdks/v4-sdk":
+  version "0.1.0"
+  resolved "file:sdks/v4-sdk"
+  dependencies:
+    "@ethersproject/solidity" "^5.0.9"
+    "@tentou-tech/uniswap-sdk-core" "0.0.16"
+    "@tentou-tech/uniswap-v3-sdk" "0.1.2"
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
 
@@ -2768,7 +2746,7 @@
     ethers "^5.7.0"
     tiny-invariant "^1.1.0"
 
-"@uniswap/sdk-core@^7.5.0", "@uniswap/sdk-core@^7.6.0", "@uniswap/sdk-core@^7.7.1", "@uniswap/sdk-core@^7.7.2":
+"@uniswap/sdk-core@^7.5.0", "@uniswap/sdk-core@^7.6.0", "@uniswap/sdk-core@^7.7.1":
   version "7.7.2"
   dependencies:
     "@ethersproject/address" "^5.0.2"
@@ -2816,15 +2794,6 @@
 "@uniswap/v2-core@^1.0.1", "@uniswap/v2-core@1.0.1":
   version "1.0.1"
 
-"@uniswap/v2-sdk@^4.15.2":
-  version "4.15.2"
-  dependencies:
-    "@ethersproject/address" "^5.0.2"
-    "@ethersproject/solidity" "^5.0.9"
-    "@uniswap/sdk-core" "^7.7.1"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-
 "@uniswap/v3-core@^1.0.0":
   version "1.0.1"
 
@@ -2840,42 +2809,12 @@
     "@uniswap/v3-core" "^1.0.0"
     base64-sol "1.0.1"
 
-"@uniswap/v3-sdk@3.25.2":
-  version "3.25.2"
-  dependencies:
-    "@ethersproject/abi" "^5.5.0"
-    "@ethersproject/solidity" "^5.0.9"
-    "@uniswap/sdk-core" "^7.7.1"
-    "@uniswap/swap-router-contracts" "^1.3.0"
-    "@uniswap/v3-periphery" "^1.1.1"
-    "@uniswap/v3-staker" "1.0.0"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-
 "@uniswap/v3-staker@1.0.0":
   version "1.0.0"
   dependencies:
     "@openzeppelin/contracts" "3.4.1-solc-0.7-2"
     "@uniswap/v3-core" "1.0.0"
     "@uniswap/v3-periphery" "^1.0.1"
-
-"@uniswap/v4-sdk@^1.21.2":
-  version "1.21.2"
-  dependencies:
-    "@ethersproject/solidity" "^5.0.9"
-    "@uniswap/sdk-core" "^7.7.1"
-    "@uniswap/v3-sdk" "3.25.2"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-
-"@uniswap/v4-sdk@file:/Users/haduong/work/tentou/sdks/sdks/v4-sdk":
-  resolved "file:sdks/v4-sdk"
-  dependencies:
-    "@ethersproject/solidity" "^5.0.9"
-    "@uniswap/sdk-core" "^7.7.1"
-    "@uniswap/v3-sdk" "3.25.2"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
 
 abab@^2.0.0:
   version "2.0.6"

@@ -1,7 +1,7 @@
-import { Currency, Token } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import { Currency, Token } from '@tentou-tech/uniswap-sdk-core'
+import { Pair } from '@tentou-tech/uniswap-v2-sdk'
 import { Pool as V3Pool } from '@tentou-tech/uniswap-v3-sdk'
-import { Pool as V4Pool } from '@uniswap/v4-sdk'
+import { Pool as V4Pool } from '@tentou-tech/uniswap-v4-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 import { TPool } from './TPool'
 
