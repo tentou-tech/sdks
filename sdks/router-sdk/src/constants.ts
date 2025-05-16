@@ -22,3 +22,6 @@ export const MIXED_QUOTER_V2_V4_FEE_PATH_PLACEHOLDER = 4 << 20
 
 export const ZERO_PERCENT = new Percent(ZERO)
 export const ONE_HUNDRED_PERCENT = new Percent(100, 100)
+
+// = 101 << 20 or 0b010100000000000000000000
+export const MIXED_QUOTER_V2_V3S1_FEE_PATH_PLACEHOLDER = 5 << 20
