@@ -4,7 +4,8 @@
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
     "uniswap",
-    "ethereum"
+    "ethereum",
+    "tentou-tech"
   ],
   "license": "MIT",
   "main": "./dist/cjs/src/index.js",
@@ -64,8 +65,7 @@
     }
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "release": {
     "extends": "semantic-release-monorepo",
@@ -107,5 +107,6 @@
       "require": "./dist/cjs/src/index.js"
     }
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "version": "0.0.1"
 }
