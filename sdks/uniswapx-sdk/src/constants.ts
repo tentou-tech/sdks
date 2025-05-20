@@ -1,4 +1,4 @@
-import { ChainId } from "@uniswap/sdk-core";
+import { ChainId } from "@tentou-tech/uniswap-sdk-core";
 import { BigNumber } from "ethers";
 
 type AddressMap = { readonly [key: number]: string };
@@ -9,6 +9,8 @@ const NETWORKS_WITH_SAME_ADDRESS: ChainId[] = [
   ChainId.POLYGON,
   ChainId.BASE,
   ChainId.UNICHAIN,
+  ChainId.STORY_AENEID,
+  ChainId.STORY,
 ];
 
 export function constructSameAddressMap<T>(
@@ -29,6 +31,8 @@ export const PERMIT2_MAPPING: AddressMap = {
     [11155111, 42161]
   ),
   12341234: "0x000000000022d473030f116ddee9f6b43ac78ba3",
+  1315: "0x9D580963649afE111f8253c827f4E1259B0452F5",
+  1514: "0x9D580963649afE111f8253c827f4E1259B0452F5",
 };
 
 export const UNISWAPX_ORDER_QUOTER_MAPPING: AddressMap = {
@@ -38,6 +42,8 @@ export const UNISWAPX_ORDER_QUOTER_MAPPING: AddressMap = {
   12341234: "0xbea0901A41177811b099F787D753436b2c47690E",
   8453: "0x88440407634f89873c5d9439987ac4be9725fea8",
   130: "0x88440407634F89873c5D9439987Ac4BE9725fea8",
+  1315: "0x861c82Ff5E48f98d225288D3d236cdB9FE12dEB3",
+  1514: "0x861c82Ff5E48f98d225288D3d236cdB9FE12dEB3",
 };
 
 export const EXCLUSIVE_FILLER_VALIDATION_MAPPING: AddressMap = {
@@ -46,6 +52,8 @@ export const EXCLUSIVE_FILLER_VALIDATION_MAPPING: AddressMap = {
   11155111: "0x0000000000000000000000000000000000000000",
   42161: "0x0000000000000000000000000000000000000000",
   12341234: "0x8A66A74e15544db9688B68B06E116f5d19e5dF90",
+  1315: "0x0000000000000000000000000000000000000000",
+  1514: "0x0000000000000000000000000000000000000000",
 };
 
 export enum KNOWN_EVENT_SIGNATURES {
@@ -111,6 +119,13 @@ export const REACTOR_ADDRESS_MAPPING: ReactorMapping = {
     [OrderType.Relay]: "0x0000000000000000000000000000000000000000",
     [OrderType.Priority]: "0x00000006021a6Bce796be7ba509BBBA71e956e37",
   },
+  1315: {
+    [OrderType.Dutch]: "0xF55E81cC90e19CEdAD699Bb22dFfDFF98C4FE6b0",
+  },
+  1514: {
+    [OrderType.Dutch]: "0xF55E81cC90e19CEdAD699Bb22dFfDFF98C4FE6b0",
+  },
+  
 };
 
 // aliasing for backwards compatibility

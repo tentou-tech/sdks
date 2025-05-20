@@ -1,5 +1,5 @@
 import { Provider } from "@ethersproject/providers";
-import { ChainId } from "@uniswap/sdk-core";
+import { ChainId } from "@tentou-tech/uniswap-sdk-core";
 
 import { PERMISSIONED_TOKENS } from "../constants";
 import { DSTokenInterface, DSTokenInterface__factory, Proxy__factory } from "../contracts";

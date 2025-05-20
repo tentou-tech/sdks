@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price, TradeType } from "@uniswap/sdk-core";
+import { Currency, CurrencyAmount, Price, TradeType } from "@tentou-tech/uniswap-sdk-core";
 
 import { UnsignedV2DutchOrder, UnsignedV2DutchOrderInfo } from "../order";
 
