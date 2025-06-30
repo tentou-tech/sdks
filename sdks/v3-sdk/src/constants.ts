@@ -15,6 +15,8 @@ export function poolInitCodeHash(chainId?: ChainId): string {
       return '0xd5178f9f07b08d01d075cc5b7e1a1ae23a37b3811522cb2fed1367201d51d4e5'
     case ChainId.STORY:
       return '0xd5178f9f07b08d01d075cc5b7e1a1ae23a37b3811522cb2fed1367201d51d4e5'
+    case ChainId.HYPER_EVM:
+      return '0xe3572921be1688dba92df30c6781b8770499ff274d20ae9b325f4242634774fb'
     default:
       return POOL_INIT_CODE_HASH
   }

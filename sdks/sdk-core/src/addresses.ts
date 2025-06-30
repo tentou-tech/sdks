@@ -63,6 +63,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.SONEIUM]: '0x97febbc2adbd5644ba22736e962564b23f5828ce',
   [ChainId.STORY_AENEID]: '0x6D3e2f58954bf4E1d0C4bA26a85a1b49b2e244C6',
   [ChainId.STORY]: '0x6D3e2f58954bf4E1d0C4bA26a85a1b49b2e244C6',
+  [ChainId.HYPER_EVM]: '0xB1c0fa0B789320044A6F623cFe5eBda9562602E3',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -87,6 +88,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.SONEIUM]: '0x273f68c234fa55b550b40e563c4a488e0d334320',
   [ChainId.STORY_AENEID]: '0x674eFAa8C50cBEF923ECe625d3c276B7Bb1c16fB',
   [ChainId.STORY]: '0x674eFAa8C50cBEF923ECe625d3c276B7Bb1c16fB',
+  [ChainId.HYPER_EVM]: '0x6D99e7f6747AF2cDbB5164b6DD50e40D4fDe1e77',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -451,6 +453,21 @@ const STORY_ADDRESSES: ChainAddresses = {
   v4QuoterAddress: '0x0000000000000000000000000000000000000000',
 }
 
+const HYPER_EVM_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xB1c0fa0B789320044A6F623cFe5eBda9562602E3',
+  multicallAddress: '0xE8571fd6629DA6E488f7BbD83e729c20Fa9B97B4',
+  quoterAddress: '0x03A918028f22D9E1473B7959C927AD7425A45C7C',
+  v3MigratorAddress: '0x820Ec81E0556f2f94f4725D358b399c11Cd78cf8',
+  nonfungiblePositionManagerAddress: '0x6eDA206207c09e5428F281761DdC0D300851fBC8',
+  tickLensAddress: '0x50588Cbe655c62A9f6584c59de026EfDfFA71130',
+  swapRouter02Address: '0x6D99e7f6747AF2cDbB5164b6DD50e40D4fDe1e77',
+
+  v4PoolManagerAddress: '0x0000000000000000000000000000000000000000',
+  v4PositionManagerAddress: '0x0000000000000000000000000000000000000000',
+  v4StateView: '0x0000000000000000000000000000000000000000',
+  v4QuoterAddress: '0x0000000000000000000000000000000000000000',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -482,6 +499,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SONEIUM]: SONEIUM_ADDRESSES,
   [ChainId.STORY_AENEID]: STORY_AENEID_ADDRESSES,
   [ChainId.STORY]: STORY_ADDRESSES,
+  [ChainId.HYPER_EVM]: HYPER_EVM_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

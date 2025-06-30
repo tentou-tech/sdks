@@ -31,6 +31,7 @@ export enum ChainId {
   SONEIUM = 1868,
   STORY_AENEID = 1315,
   STORY = 1514,
+  HYPER_EVM = 999,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -64,6 +65,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.SONEIUM,
   ChainId.STORY_AENEID,
   ChainId.STORY,
+  ChainId.HYPER_EVM,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -77,4 +79,5 @@ export enum NativeCurrencyName {
   BNB = 'BNB',
   AVAX = 'AVAX',
   ROOTSTOCK = 'RBTC',
+  HYPER_EVM = 'HYPE',
 }

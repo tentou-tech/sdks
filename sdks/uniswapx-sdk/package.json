@@ -34,7 +34,7 @@
   "dependencies": {
     "@ethersproject/bytes": "^5.7.0",
     "@ethersproject/providers": "^5.7.0",
-    "@tentou-tech/uniswap-sdk-core": "^0.0.17",
+    "@tentou-tech/uniswap-sdk-core": "^0.0.20",
     "@uniswap/permit2-sdk": "^1.2.1",
     "ethers": "^5.7.0"
   },
@@ -108,5 +108,5 @@
     }
   },
   "sideEffects": false,
-  "version": "0.0.4"
+  "version": "0.0.5"
 }
