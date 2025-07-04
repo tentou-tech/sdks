@@ -43,7 +43,7 @@ export const UNISWAPX_ORDER_QUOTER_MAPPING: AddressMap = {
   8453: "0x88440407634f89873c5d9439987ac4be9725fea8",
   130: "0x88440407634F89873c5D9439987Ac4BE9725fea8",
   1315: "0x861c82Ff5E48f98d225288D3d236cdB9FE12dEB3",
-  1514: "0x861c82Ff5E48f98d225288D3d236cdB9FE12dEB3",
+  1514: "0x0483602a3BEF687ef33B4441C8d78D5c1c343618",
 };
 
 export const EXCLUSIVE_FILLER_VALIDATION_MAPPING: AddressMap = {
@@ -126,12 +126,11 @@ export const REACTOR_ADDRESS_MAPPING: ReactorMapping = {
     [OrderType.Priority]: "0x0000000000000000000000000000000000000000",
   },
   1514: {
-    [OrderType.Dutch]: "0x5F88087fbc0c47e9aC7Dbda8Bb561127735EEC87",
+    [OrderType.Dutch]: "0xbD0FaCBF4a163500afC60E9e07B9752A12366b57",
     [OrderType.Dutch_V2]: "0x0000000000000000000000000000000000000000",
     [OrderType.Relay]: "0x0000000000000000000000000000000000000000",
     [OrderType.Priority]: "0x0000000000000000000000000000000000000000",
   },
-  
 };
 
 // aliasing for backwards compatibility
@@ -176,7 +175,7 @@ type PermissionedToken = {
   chainId: ChainId;
   symbol: string;
   usesProxy: boolean;
-}
+};
 
 export const PERMISSIONED_TOKENS: PermissionedToken[] = [
   {
@@ -185,4 +184,4 @@ export const PERMISSIONED_TOKENS: PermissionedToken[] = [
     symbol: "BUIDL",
     usesProxy: true,
   },
-]
+];
