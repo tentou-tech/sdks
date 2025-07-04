@@ -3942,23 +3942,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tentou-tech/uniswap-sdk-core@npm:^0.0.20":
-  version: 0.0.20
-  resolution: "@tentou-tech/uniswap-sdk-core@npm:0.0.20"
-  dependencies:
-    "@ethersproject/address": ^5.0.2
-    "@ethersproject/bytes": ^5.7.0
-    "@ethersproject/keccak256": 5.7.0
-    "@ethersproject/strings": 5.7.0
-    big.js: ^5.2.2
-    decimal.js-light: ^2.5.0
-    jsbi: ^3.1.4
-    tiny-invariant: ^1.1.0
-    toformat: ^2.0.0
-  checksum: 8d09c31c365a13a1b112123fc45adf706b7baf8b87d2560474ac31a335a1d215c3de7d3de4d7a7022c1781924565305b007faa731651a929c6e1a212d1dc3d76
-  languageName: node
-  linkType: hard
-
 "@tentou-tech/uniswap-sdk-core@workspace:sdks/sdk-core":
   version: 0.0.0-use.local
   resolution: "@tentou-tech/uniswap-sdk-core@workspace:sdks/sdk-core"
@@ -4019,7 +4002,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@tentou-tech/uniswap-v2-sdk@npm:^0.1.2":
+"@tentou-tech/uniswap-v2-sdk@npm:^0.1.3":
   version: 0.1.3
   resolution: "@tentou-tech/uniswap-v2-sdk@npm:0.1.3"
   dependencies:
